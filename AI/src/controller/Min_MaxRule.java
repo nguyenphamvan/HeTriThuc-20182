@@ -13,7 +13,7 @@ import java.util.HashMap;
 
 public class Min_MaxRule {
 
-    public static final String D[] = {"sốt virut", "sốt rét", "thương hàn", "bệnh dạ dày", "bệnh tim"};
+    public static final String D[] = {"fever", "malaria", "typhoid", "stomach", "chest_problem"};
 
     public Min_MaxRule() {
     }
@@ -38,31 +38,31 @@ public class Min_MaxRule {
         return min;
     }
 
-    public ArrayList<PictureFuzzySet> QuanHe_BenhNhan_Benh1(ArrayList<PictureFuzzySet> A, ArrayList<PictureFuzzySet[]> B) {
-        ArrayList<PictureFuzzySet> C = new ArrayList<>();
+    public ArrayList<PictureFuzzySet> QuanHe_BenhNhan_Benh1(ArrayList<PictureFuzzySet> S, ArrayList<PictureFuzzySet[]> R) {
+        ArrayList<PictureFuzzySet> T = new ArrayList<>();
         for (int j = 0; j < D.length; j++) {
             ArrayList<Double> arrList_x = new ArrayList<>();
             ArrayList<Double> arrList_y = new ArrayList<>();
             ArrayList<Double> arrList_z = new ArrayList<>();
             for (int k = 0; k < D.length; k++) {
-                double min_x = Math.min(A.get(k).getX(), B.get(k)[j].getX());
+                double min_x = Math.min(S.get(k).getX(), R.get(k)[j].getX());
                 arrList_x.add(min_x);
-                double min_y = Math.min(A.get(k).getY(), B.get(k)[j].getY());
+                double min_y = Math.min(S.get(k).getY(), R.get(k)[j].getY());
                 arrList_y.add(min_y);
-                double max_z = Math.max(A.get(k).getZ(), B.get(k)[j].getZ());
+                double max_z = Math.max(S.get(k).getZ(), R.get(k)[j].getZ());
                 arrList_z.add(max_z);
             }
             PictureFuzzySet newSet = new PictureFuzzySet(FindMax(arrList_x), FindMin(arrList_y), FindMin(arrList_z));
-            C.add(j, newSet);
+            T.add(j, newSet);
         }
-        return C;
+        return T;
     }
 
-    public ArrayList<Double> TinhGiaTriRo(ArrayList<PictureFuzzySet> C) {
+    public ArrayList<Double> TinhGiaTriRo(ArrayList<PictureFuzzySet> T) {
         ArrayList<Double> X = new ArrayList<>();
         for (int j = 0; j < 5; j++) {
-            double pi = 1 - (C.get(j).getX() + C.get(j).getY() + C.get(j).getZ());
-            double xs = C.get(j).getX() - C.get(j).getZ() * pi;
+            double pi = 1 - (T.get(j).getX() + T.get(j).getY() + T.get(j).getZ());
+            double xs = T.get(j).getX() - T.get(j).getZ() * pi;
             X.add(j, xs);
         }
         return X;

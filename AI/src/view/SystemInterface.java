@@ -161,6 +161,7 @@ public class SystemInterface extends javax.swing.JFrame {
         jScrollPane7 = new javax.swing.JScrollPane();
         jTextArea4 = new javax.swing.JTextArea();
         jButton5 = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
         jPanel13 = new javax.swing.JPanel();
         jPanel17 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
@@ -356,9 +357,9 @@ public class SystemInterface extends javax.swing.JFrame {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabel2.setText("Nhập ID");
+        jLabel2.setText("ID");
 
-        jButton2.setText("Tìm kiếm");
+        jButton2.setText("Search");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -366,22 +367,22 @@ public class SystemInterface extends javax.swing.JFrame {
         });
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
-        jLabel1.setText("Tên            : ");
+        jLabel1.setText("Name            : ");
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
-        jLabel4.setText("Ngày sinh :");
+        jLabel4.setText("Birth             :");
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
-        jLabel5.setText("Giởi tính  :");
+        jLabel5.setText("Gender          :");
 
         jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel35.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
-        jLabel35.setText("Mã BHYT  :");
+        jLabel35.setText("ID BHYT       :");
 
-        jPanel12.setBorder(javax.swing.BorderFactory.createTitledBorder("Thông tin chuẩn đoán gần nhất"));
+        jPanel12.setBorder(javax.swing.BorderFactory.createTitledBorder("Latest diagnostic information"));
 
-        jLabel11.setText("Thời gian ");
+        jLabel11.setText("Date");
 
         jLabel12.setText(" ");
         jLabel12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -418,14 +419,14 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addGap(2, 2, 2))
         );
 
-        jButton14.setText("Thêm ảnh");
+        jButton14.setText("Add avatar");
         jButton14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton14ActionPerformed(evt);
             }
         });
 
-        jButton15.setText("Lưu avatar");
+        jButton15.setText("Save avatar");
         jButton15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton15ActionPerformed(evt);
@@ -446,32 +447,31 @@ public class SystemInterface extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(jLabel2)
+                                .addGap(28, 28, 28)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jTextField1)
+                                    .addComponent(jButton14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jButton15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel4)
                                     .addComponent(jLabel1)
                                     .addComponent(jLabel5)
-                                    .addComponent(jLabel35))
+                                    .addComponent(jLabel35)
+                                    .addComponent(jLabel4))
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(55, 55, 55)
-                                .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(12, 12, 12))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(78, 78, 78)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(71, 71, 71))
+                .addGap(0, 0, 0))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -495,43 +495,44 @@ public class SystemInterface extends javax.swing.JFrame {
                     .addComponent(jLabel1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
-                .addGap(12, 12, 12)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
-                        .addComponent(jLabel35))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5))
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addComponent(jLabel35))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel4))
                 .addContainerGap())
         );
 
         jLabel15.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel15.setText("Chọn mức độ các triệu chứng");
+        jLabel15.setText("Select the level of symptoms");
 
         jPanel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel32.setText("Bệnh và độ chính xác chuẩn đoán ");
+        jLabel32.setText("Sick and diagnosis probability");
 
         jPanel9.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jLabel33.setText("Hình ảnh");
+        jLabel33.setText("Image");
 
-        jButton3.setText("<< Trước");
+        jButton3.setText("<< Before");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
 
-        jButton4.setText("Sau >>");
+        jButton4.setText("After >>");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -550,13 +551,13 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addComponent(jButton3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 143, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton4))
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel33)
-                            .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                            .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 8, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel9Layout.setVerticalGroup(
@@ -572,14 +573,14 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jButton7.setText("Xác suất 5 bệnh");
+        jButton7.setText("Probability 5 diseases");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
             }
         });
 
-        jButton8.setText("Lưu");
+        jButton8.setText("Save");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
@@ -602,18 +603,18 @@ public class SystemInterface extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel32, javax.swing.GroupLayout.DEFAULT_SIZE, 164, Short.MAX_VALUE)
                             .addComponent(jScrollPane6))
                         .addGap(19, 19, 19))
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel8Layout.createSequentialGroup()
-                                .addGap(40, 40, 40)
-                                .addComponent(jButton7))
-                            .addGroup(jPanel8Layout.createSequentialGroup()
                                 .addGap(64, 64, 64)
-                                .addComponent(jButton8)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addComponent(jButton8))
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addGap(28, 28, 28)
+                                .addComponent(jButton7)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)))
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -634,7 +635,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jButton1.setText("Chuẩn đoán");
+        jButton1.setText("Diagnose");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -643,29 +644,29 @@ public class SystemInterface extends javax.swing.JFrame {
 
         jPanel10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Nhiệt độ"));
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("temperature"));
 
-        jLabel17.setText("Biểu hiện rõ");
+        jLabel17.setText("Clearly");
 
-        jLabel18.setText("Bình thường");
+        jLabel18.setText("Normal");
 
-        jLabel19.setText("không rõ");
+        jLabel19.setText("Unclearly");
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Không", "Rất thấp", "Thấp", "Hơi thấp", "Trung bình", "Hơi cao", "Cao", "Rất cao", "Hoàn toàn" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None", "Very low", "Low", "Little low", "Medium", "Little high", "High", "Very high", "Completely" }));
         jComboBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox2ActionPerformed(evt);
             }
         });
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Không", "Rất thấp", "Thấp", "Hơi thấp", "Trung bình", "Hơi cao", "Cao", "Rất cao", "Hoàn toàn" }));
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None", "Very low", "Low", "Little low", "Medium", "Little high", "High", "Very high", "Completely" }));
         jComboBox3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox3ActionPerformed(evt);
             }
         });
 
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Không", "Rất thấp", "Thấp", "Hơi thấp", "Trung bình", "Hơi cao", "Cao", "Rất cao", "Hoàn toàn" }));
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None", "Very low", "Low", "Little low", "Medium", "Little high", "High", "Very high", "Completely" }));
         jComboBox4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox4ActionPerformed(evt);
@@ -712,29 +713,29 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addGap(3, 3, 3))
         );
 
-        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("Đau đầu"));
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("headache"));
 
-        jLabel20.setText("Biểu hiện rõ");
+        jLabel20.setText("Clearly");
 
-        jLabel21.setText("Bình thường");
+        jLabel21.setText("Normal");
 
-        jLabel22.setText("không rõ");
+        jLabel22.setText("Unclearly");
 
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Không", "Rất thấp", "Thấp", "Hơi thấp", "Trung bình", "Hơi cao", "Cao", "Rất cao", "Hoàn toàn" }));
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None", "Very low", "Low", "Little low", "Medium", "Little high", "High", "Very high", "Completely" }));
         jComboBox5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox5ActionPerformed(evt);
             }
         });
 
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Không", "Rất thấp", "Thấp", "Hơi thấp", "Trung bình", "Hơi cao", "Cao", "Rất cao", "Hoàn toàn" }));
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None", "Very low", "Low", "Little low", "Medium", "Little high", "High", "Very high", "Completely" }));
         jComboBox6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox6ActionPerformed(evt);
             }
         });
 
-        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Không", "Rất thấp", "Thấp", "Hơi thấp", "Trung bình", "Hơi cao", "Cao", "Rất cao", "Hoàn toàn" }));
+        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None", "Very low", "Low", "Little low", "Medium", "Little high", "High", "Very high", "Completely" }));
         jComboBox7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox7ActionPerformed(evt);
@@ -748,14 +749,14 @@ public class SystemInterface extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel22)
-                    .addComponent(jLabel21)
-                    .addComponent(jLabel20))
+                    .addComponent(jLabel20)
+                    .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel22))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jComboBox5, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jComboBox6, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jComboBox7, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jComboBox7, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jComboBox6, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
@@ -774,29 +775,29 @@ public class SystemInterface extends javax.swing.JFrame {
                     .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
-        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("Đau bụng"));
+        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("stomachache"));
 
-        jLabel23.setText("Biểu hiện rõ");
+        jLabel23.setText("Clearly");
 
-        jLabel24.setText("Bình thường");
+        jLabel24.setText("Normal");
 
-        jLabel25.setText("không rõ");
+        jLabel25.setText("Unclearly");
 
-        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Không", "Rất thấp", "Thấp", "Hơi thấp", "Trung bình", "Hơi cao", "Cao", "Rất cao", "Hoàn toàn" }));
+        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None", "Very low", "Low", "Little low", "Medium", "Little high", "High", "Very high", "Completely" }));
         jComboBox8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox8ActionPerformed(evt);
             }
         });
 
-        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Không", "Rất thấp", "Thấp", "Hơi thấp", "Trung bình", "Hơi cao", "Cao", "Rất cao", "Hoàn toàn" }));
+        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None", "Very low", "Low", "Little low", "Medium", "Little high", "High", "Very high", "Completely" }));
         jComboBox9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox9ActionPerformed(evt);
             }
         });
 
-        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Không", "Rất thấp", "Thấp", "Hơi thấp", "Trung bình", "Hơi cao", "Cao", "Rất cao", "Hoàn toàn" }));
+        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None", "Very low", "Low", "Little low", "Medium", "Little high", "High", "Very high", "Completely" }));
         jComboBox10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox10ActionPerformed(evt);
@@ -810,9 +811,9 @@ public class SystemInterface extends javax.swing.JFrame {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel24)
-                    .addComponent(jLabel25)
-                    .addComponent(jLabel23))
+                    .addComponent(jLabel23)
+                    .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel25))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jComboBox8, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -836,29 +837,29 @@ public class SystemInterface extends javax.swing.JFrame {
                     .addComponent(jComboBox10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
-        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder("Ho"));
+        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder("Cough"));
 
-        jLabel26.setText("Biểu hiện rõ");
+        jLabel26.setText("Clearly");
 
-        jLabel27.setText("Bình thường");
+        jLabel27.setText("Normal");
 
-        jLabel28.setText("không rõ");
+        jLabel28.setText("Unclearly");
 
-        jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Không", "Rất thấp", "Thấp", "Hơi thấp", "Trung bình", "Hơi cao", "Cao", "Rất cao", "Hoàn toàn" }));
+        jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None", "Very low", "Low", "Little low", "Medium", "Little high", "High", "Very high", "Completely" }));
         jComboBox11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox11ActionPerformed(evt);
             }
         });
 
-        jComboBox12.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Không", "Rất thấp", "Thấp", "Hơi thấp", "Trung bình", "Hơi cao", "Cao", "Rất cao", "Hoàn toàn" }));
+        jComboBox12.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None", "Very low", "Low", "Little low", "Medium", "Little high", "High", "Very high", "Completely" }));
         jComboBox12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox12ActionPerformed(evt);
             }
         });
 
-        jComboBox13.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Không", "Rất thấp", "Thấp", "Hơi thấp", "Trung bình", "Hơi cao", "Cao", "Rất cao", "Hoàn toàn" }));
+        jComboBox13.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None", "Very low", "Low", "Little low", "Medium", "Little high", "High", "Very high", "Completely" }));
         jComboBox13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox13ActionPerformed(evt);
@@ -872,9 +873,9 @@ public class SystemInterface extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel27)
-                    .addComponent(jLabel28)
-                    .addComponent(jLabel26))
+                    .addComponent(jLabel26)
+                    .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel28))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jComboBox11, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -898,29 +899,29 @@ public class SystemInterface extends javax.swing.JFrame {
                     .addComponent(jComboBox13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
-        jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder("Đau ngực"));
+        jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder("chest pain"));
 
-        jLabel29.setText("Biểu hiện rõ");
+        jLabel29.setText("Clearly");
 
-        jLabel30.setText("Bình thường");
+        jLabel30.setText("Normal");
 
-        jLabel31.setText("không rõ");
+        jLabel31.setText("Unclearly");
 
-        jComboBox14.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Không", "Rất thấp", "Thấp", "Hơi thấp", "Trung bình", "Hơi cao", "Cao", "Rất cao", "Hoàn toàn" }));
+        jComboBox14.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None", "Very low", "Low", "Little low", "Medium", "Little high", "High", "Very high", "Completely" }));
         jComboBox14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox14ActionPerformed(evt);
             }
         });
 
-        jComboBox15.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Không", "Rất thấp", "Thấp", "Hơi thấp", "Trung bình", "Hơi cao", "Cao", "Rất cao", "Hoàn toàn" }));
+        jComboBox15.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None", "Very low", "Low", "Little low", "Medium", "Little high", "High", "Very high", "Completely" }));
         jComboBox15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox15ActionPerformed(evt);
             }
         });
 
-        jComboBox16.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Không", "Rất thấp", "Thấp", "Hơi thấp", "Trung bình", "Hơi cao", "Cao", "Rất cao", "Hoàn toàn" }));
+        jComboBox16.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None", "Very low", "Low", "Little low", "Medium", "Little high", "High", "Very high", "Completely" }));
         jComboBox16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox16ActionPerformed(evt);
@@ -934,9 +935,9 @@ public class SystemInterface extends javax.swing.JFrame {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel30)
-                    .addComponent(jLabel31)
-                    .addComponent(jLabel29))
+                    .addComponent(jLabel29)
+                    .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel31))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jComboBox14, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -966,13 +967,13 @@ public class SystemInterface extends javax.swing.JFrame {
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -991,7 +992,7 @@ public class SystemInterface extends javax.swing.JFrame {
 
         jPanel11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel34.setText("Tư vấn điều trị");
+        jLabel34.setText("Medical advice");
 
         jTextArea4.setColumns(20);
         jTextArea4.setLineWrap(true);
@@ -1022,7 +1023,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jButton5.setText("Thêm bệnh nhân mới");
+        jButton5.setText("Add new patient");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -1038,25 +1039,28 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jButton5)
+                                .addGap(41, 41, 41)
+                                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jLabel15)
                             .addComponent(jButton1)
                             .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 95, Short.MAX_VALUE)))
+                        .addGap(0, 155, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(11, 11, 11)
-                .addComponent(jButton5)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(13, 13, 13)
                 .addComponent(jLabel15)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1073,21 +1077,21 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jTabbedPane2.addTab("Chuẩn đoán bệnh", jPanel1);
+        jTabbedPane2.addTab("Diagnostic", jPanel1);
 
         jPanel17.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jLabel9.setText("Nhiệt độ");
+        jLabel9.setText("Temperature");
 
-        jLabel10.setText("Đau đầu");
+        jLabel10.setText("Headache");
 
-        jLabel48.setText("Đau bụng");
+        jLabel48.setText("Stomachache");
 
-        jLabel49.setText("Ho");
+        jLabel49.setText("Cough");
 
-        jLabel50.setText("Đau ngực");
+        jLabel50.setText("Chest pain");
 
-        jPanel19.setBorder(javax.swing.BorderFactory.createTitledBorder("Sốt rét"));
+        jPanel19.setBorder(javax.swing.BorderFactory.createTitledBorder("Malaria"));
 
         jLabel54.setText("x");
 
@@ -1124,7 +1128,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel20.setBorder(javax.swing.BorderFactory.createTitledBorder("Thương hàn"));
+        jPanel20.setBorder(javax.swing.BorderFactory.createTitledBorder("Typhoid"));
 
         jLabel57.setText("x");
 
@@ -1161,7 +1165,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel21.setBorder(javax.swing.BorderFactory.createTitledBorder("Dạ dày"));
+        jPanel21.setBorder(javax.swing.BorderFactory.createTitledBorder("Stomach"));
 
         jLabel60.setText("x");
 
@@ -1198,7 +1202,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel22.setBorder(javax.swing.BorderFactory.createTitledBorder("Sốt virut"));
+        jPanel22.setBorder(javax.swing.BorderFactory.createTitledBorder("Fever"));
 
         jLabel63.setText("x");
 
@@ -1235,7 +1239,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel23.setBorder(javax.swing.BorderFactory.createTitledBorder("Tim"));
+        jPanel23.setBorder(javax.swing.BorderFactory.createTitledBorder("Chest problem"));
 
         jLabel66.setText("x");
 
@@ -1272,7 +1276,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel24.setBorder(javax.swing.BorderFactory.createTitledBorder("Sốt virut"));
+        jPanel24.setBorder(javax.swing.BorderFactory.createTitledBorder("Fever"));
 
         jLabel69.setText("x");
 
@@ -1309,7 +1313,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel25.setBorder(javax.swing.BorderFactory.createTitledBorder("Sốt rét"));
+        jPanel25.setBorder(javax.swing.BorderFactory.createTitledBorder("Malaria"));
 
         jLabel72.setText("x");
 
@@ -1346,7 +1350,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel26.setBorder(javax.swing.BorderFactory.createTitledBorder("Thương hàn"));
+        jPanel26.setBorder(javax.swing.BorderFactory.createTitledBorder("Typhoid"));
 
         jLabel75.setText("x");
 
@@ -1383,7 +1387,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel27.setBorder(javax.swing.BorderFactory.createTitledBorder("Dạ dày"));
+        jPanel27.setBorder(javax.swing.BorderFactory.createTitledBorder("Stomach"));
 
         jLabel78.setText("x");
 
@@ -1420,7 +1424,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel28.setBorder(javax.swing.BorderFactory.createTitledBorder("Tim"));
+        jPanel28.setBorder(javax.swing.BorderFactory.createTitledBorder("Chest problem"));
 
         jLabel81.setText("x");
 
@@ -1457,7 +1461,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel29.setBorder(javax.swing.BorderFactory.createTitledBorder("Sốt virut"));
+        jPanel29.setBorder(javax.swing.BorderFactory.createTitledBorder("Fever"));
 
         jLabel84.setText("x");
 
@@ -1494,7 +1498,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel30.setBorder(javax.swing.BorderFactory.createTitledBorder("Sốt rét"));
+        jPanel30.setBorder(javax.swing.BorderFactory.createTitledBorder("Malaria"));
 
         jLabel87.setText("x");
 
@@ -1531,7 +1535,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel31.setBorder(javax.swing.BorderFactory.createTitledBorder("Thương hàn"));
+        jPanel31.setBorder(javax.swing.BorderFactory.createTitledBorder("Typhoid"));
 
         jLabel90.setText("x");
 
@@ -1568,7 +1572,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel32.setBorder(javax.swing.BorderFactory.createTitledBorder("Dạ dày"));
+        jPanel32.setBorder(javax.swing.BorderFactory.createTitledBorder("Stomach"));
 
         jLabel93.setText("x");
 
@@ -1605,7 +1609,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel33.setBorder(javax.swing.BorderFactory.createTitledBorder("Tim"));
+        jPanel33.setBorder(javax.swing.BorderFactory.createTitledBorder("Chest problem"));
 
         jLabel96.setText("x");
 
@@ -1642,7 +1646,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel34.setBorder(javax.swing.BorderFactory.createTitledBorder("Sốt virut"));
+        jPanel34.setBorder(javax.swing.BorderFactory.createTitledBorder("Fever"));
 
         jLabel99.setText("x");
 
@@ -1679,7 +1683,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel35.setBorder(javax.swing.BorderFactory.createTitledBorder("Sốt rét"));
+        jPanel35.setBorder(javax.swing.BorderFactory.createTitledBorder("Malaria"));
 
         jLabel102.setText("x");
 
@@ -1716,7 +1720,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField56, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel36.setBorder(javax.swing.BorderFactory.createTitledBorder("Thương hàn"));
+        jPanel36.setBorder(javax.swing.BorderFactory.createTitledBorder("Typhoid"));
 
         jLabel105.setText("x");
 
@@ -1753,7 +1757,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField59, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel37.setBorder(javax.swing.BorderFactory.createTitledBorder("Dạ dày"));
+        jPanel37.setBorder(javax.swing.BorderFactory.createTitledBorder("Stomach"));
 
         jLabel108.setText("x");
 
@@ -1790,7 +1794,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField62, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel38.setBorder(javax.swing.BorderFactory.createTitledBorder("Tim"));
+        jPanel38.setBorder(javax.swing.BorderFactory.createTitledBorder("Chest problem"));
 
         jLabel111.setText("x");
 
@@ -1827,7 +1831,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField65, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel39.setBorder(javax.swing.BorderFactory.createTitledBorder("Sốt virut"));
+        jPanel39.setBorder(javax.swing.BorderFactory.createTitledBorder("Fever"));
 
         jLabel114.setText("x");
 
@@ -1864,7 +1868,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField68, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel40.setBorder(javax.swing.BorderFactory.createTitledBorder("Sốt rét"));
+        jPanel40.setBorder(javax.swing.BorderFactory.createTitledBorder("Malaria"));
 
         jLabel117.setText("x");
 
@@ -1901,7 +1905,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField71, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel41.setBorder(javax.swing.BorderFactory.createTitledBorder("Thương hàn"));
+        jPanel41.setBorder(javax.swing.BorderFactory.createTitledBorder("Typhoid"));
 
         jLabel120.setText("x");
 
@@ -1938,7 +1942,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField74, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel42.setBorder(javax.swing.BorderFactory.createTitledBorder("Dạ dày"));
+        jPanel42.setBorder(javax.swing.BorderFactory.createTitledBorder("Stomach"));
 
         jLabel123.setText("x");
 
@@ -1975,7 +1979,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addComponent(jTextField77, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel43.setBorder(javax.swing.BorderFactory.createTitledBorder("Tim"));
+        jPanel43.setBorder(javax.swing.BorderFactory.createTitledBorder("Chest problem"));
 
         jLabel126.setText("x");
 
@@ -2061,7 +2065,7 @@ public class SystemInterface extends javax.swing.JFrame {
                     .addComponent(jPanel28, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel23, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel43, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel17Layout.setVerticalGroup(
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2128,47 +2132,47 @@ public class SystemInterface extends javax.swing.JFrame {
         );
 
         jLabel51.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel51.setText("Thiết lập quan hệ giữa Triệu chứng - Bệnh theo bộ picture fuzzy set");
+        jLabel51.setText("Establish the relationship between Symptoms - Disease by the set of picture fuzzy set");
 
         jLabel52.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel52.setText("x : độ tích cực,  y : độ trung lập ,  z : độ tiêu cực   ( 0 <= x,y,z <= 1 ;  x+y+z <=1 ) ");
+        jLabel52.setText("x: positive, y: neutral, z: negative (0 <= x, y, z <= 1; x + y + z <= 1)");
 
-        jButton6.setText("Xem dữ liệu cũ");
+        jButton6.setText("current data");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
             }
         });
 
-        jButton9.setText("Lưu nhiệt độ");
+        jButton9.setText("Save temperature");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
             }
         });
 
-        jButton10.setText("Lưu đau đầu");
+        jButton10.setText("Save headache");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton10ActionPerformed(evt);
             }
         });
 
-        jButton11.setText("Lưu đau bụng");
+        jButton11.setText("Save stomachache");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton11ActionPerformed(evt);
             }
         });
 
-        jButton12.setText("Lưu ho");
+        jButton12.setText("Save cough");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton12ActionPerformed(evt);
             }
         });
 
-        jButton13.setText("Lưu đau ngực");
+        jButton13.setText("Save chest pain");
         jButton13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton13ActionPerformed(evt);
@@ -2225,7 +2229,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jTabbedPane2.addTab("Quản lý tri thức chuyên gia", jPanel13);
+        jTabbedPane2.addTab("expert knowledge", jPanel13);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -2243,38 +2247,39 @@ public class SystemInterface extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        String name = JOptionPane.showInputDialog("Nhập tên của bạn");
+        String name = JOptionPane.showInputDialog("Your name");
         while (name.length() <= 0) {
-            name = JOptionPane.showInputDialog("Vui lòng nhập lại tên của bạn");
+            name = JOptionPane.showInputDialog("Enter your name again");
         }
 
-        String birth = JOptionPane.showInputDialog("Nhập ngày sinh");
+        String birth = JOptionPane.showInputDialog("Birth");
         while (birth.length() <= 0) {
-            birth = JOptionPane.showInputDialog("Vui lòng nhập lại ngày sinh");
+            birth = JOptionPane.showInputDialog("Enter your birth again");
         }
 
-        String gender = JOptionPane.showInputDialog("Nhập giới tính của bạn");
+        String gender = JOptionPane.showInputDialog("Gender");
         while (gender.length() <= 0) {
-            gender = JOptionPane.showInputDialog("Vui lòng nhập lại giới tính của bạn");
+            gender = JOptionPane.showInputDialog("Enter your gender again");
         }
 
-        String bhyt = JOptionPane.showInputDialog("Nhập mã thẻ BHYT của bạn");
+        String bhyt = JOptionPane.showInputDialog("Id BHYT");
         while (gender.length() <= 0) {
-            gender = JOptionPane.showInputDialog("Vui lòng nhập lại mã thẻ BHYT của bạn");
+            gender = JOptionPane.showInputDialog("Enter your id BHYT");
         }
 
         Patient newPatient = new Patient(0, name, birth, gender, bhyt, null);
         try {
             if(new PatientDAO().themBenhNhan(newPatient)){
-                JOptionPane.showMessageDialog(this, "Dữ liệu của bạn đã được lưu1");
+                JOptionPane.showMessageDialog(this, "Save data successfully1");
                 patient = patientDAO.timBenhNhan(newPatient.getId());
                 jLabel8.setText(patient.getName());
                 jLabel6.setText(patient.getBirth());
                 jLabel36.setText(patient.getBhyt());
+                jLabel14.setText("The ID provided is : "+newPatient.getId());
                 if (patient.getGender().equals("Male")) {
-                    jLabel7.setText("Nam");
+                    jLabel7.setText("Male");
                 } else {
-                    jLabel7.setText("Nữ");
+                    jLabel7.setText("Female");
                 }
                 ArrayList<String> benh = new ArrayList<>();
                 Patients_diagnoses_value duLieuKhamBenhMoiNhat = new Patients_diagnoses_valueDAO().timDuLieuKhamBenhMoiNhat(patient.getId());
@@ -2302,7 +2307,7 @@ public class SystemInterface extends javax.swing.JFrame {
                 jList1.setModel(model);
                 jLabel12.setText(duLieuKhamBenhMoiNhat.getDate());
             }else{
-                JOptionPane.showMessageDialog(this, "Không thể thêm dữ liệu của bạn, hãy kiểm tra lại thông tin", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Unable to add your data, please check your information", "Error", JOptionPane.ERROR_MESSAGE);
             }
         } catch (SQLException ex) {
             Logger.getLogger(SystemInterface.class.getName()).log(Level.SEVERE, null, ex);
@@ -2398,7 +2403,7 @@ public class SystemInterface extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
         if (patient == null) {
-            JOptionPane.showMessageDialog(this, "Chưa có thông tin bệnh nhân, vui lòng vào mục tìm kiếm", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "No patient information exists, please go to the search section", "Error", JOptionPane.ERROR_MESSAGE);
         } else {
             getPatient_sysptom();
             ArrayList<Double> X = min_maxRule.TinhGiaTriRo(min_maxRule.QuanHe_BenhNhan_Benh1(pf_patient_sysptoms, list));
@@ -2424,7 +2429,7 @@ public class SystemInterface extends javax.swing.JFrame {
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
         if (patient == null) {
-            JOptionPane.showMessageDialog(this, "Chưa có dữ liệu bệnh nhân, vui lòng vào mục tìm kiếm!", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "No patient information exists, please go to the search section!", "Error", JOptionPane.ERROR_MESSAGE);
         } else {
             ArrayList<Double> X = min_maxRule.TinhGiaTriRo(min_maxRule.QuanHe_BenhNhan_Benh1(pf_patient_sysptoms, list));
             int idPatien = patient.getId();
@@ -2435,9 +2440,9 @@ public class SystemInterface extends javax.swing.JFrame {
             try {
                 if (new Patients_diagnoses_valueDAO().themDuLieuBenhNhan(data)) {
                     System.out.println(new Patients_diagnoses_valueDAO().themDuLieuBenhNhan(data));
-                    JOptionPane.showMessageDialog(this, "Dữ liệu khám bệnh đã được lưu!");
+                    JOptionPane.showMessageDialog(this, "The medical examination data has been saved!");
                 } else {
-                    JOptionPane.showMessageDialog(this, "Có lỗi xảy ra", "lỗi thêm dữ liệu", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(this, "There was an error", "data addition error", JOptionPane.ERROR_MESSAGE);
                 }
             } catch (SQLException ex) {
                 Logger.getLogger(SystemInterface.class.getName()).log(Level.SEVERE, null, ex);
@@ -2448,7 +2453,7 @@ public class SystemInterface extends javax.swing.JFrame {
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
         ArrayList<Double> X = min_maxRule.TinhGiaTriRo(min_maxRule.QuanHe_BenhNhan_Benh1(pf_patient_sysptoms, list));
-        JOptionPane.showMessageDialog(this, "Fever : " + X.get(0) + "\n" + "Malaria : " + X.get(1) + "\n" + "Typhoid : " + X.get(2) + "\n" + "Stomach : " + X.get(3) + "\n" + "Chest problem : " + X.get(4) + "\n", "Xác suất từng bệnh như sau", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(this, "Fever : " + X.get(0) + "\n" + "Malaria : " + X.get(1) + "\n" + "Typhoid : " + X.get(2) + "\n" + "Stomach : " + X.get(3) + "\n" + "Chest problem : " + X.get(4) + "\n", "The probability of each disease is as follows", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -2472,7 +2477,7 @@ public class SystemInterface extends javax.swing.JFrame {
         try {
             //        System.out.println(idBenhNhan);
             if (patientDAO.timBenhNhan(idBenhNhan) == null) {
-                JOptionPane.showMessageDialog(this, "Bệnh nhân không tồn tại", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "The patient does not exist", "Error", JOptionPane.ERROR_MESSAGE);
             } else {
                 patient = patientDAO.timBenhNhan(idBenhNhan);
                 jLabel8.setText(patient.getName());
@@ -2482,19 +2487,19 @@ public class SystemInterface extends javax.swing.JFrame {
                 ArrayList<String> benh = new ArrayList<>();
                 Patients_diagnoses_value duLieuKhamBenhMoiNhat = new Patients_diagnoses_valueDAO().timDuLieuKhamBenhMoiNhat(idBenhNhan);
                 if (duLieuKhamBenhMoiNhat.getFever() >= 0.5) {
-                    benh.add("sốt virut ("+duLieuKhamBenhMoiNhat.getFever()+")");
+                    benh.add("fever ("+duLieuKhamBenhMoiNhat.getFever()+")");
                 }
                 if (duLieuKhamBenhMoiNhat.getMalaria() >= 0.5) {
-                    benh.add("sốt rét ("+duLieuKhamBenhMoiNhat.getMalaria()+")");
+                    benh.add("malaria ("+duLieuKhamBenhMoiNhat.getMalaria()+")");
                 }
                 if (duLieuKhamBenhMoiNhat.getTyphoid() >= 0.5) {
-                    benh.add("thương hàn ("+duLieuKhamBenhMoiNhat.getTyphoid()+")");
+                    benh.add("typhoid ("+duLieuKhamBenhMoiNhat.getTyphoid()+")");
                 }
                 if (duLieuKhamBenhMoiNhat.getStomach() >= 0.5) {
-                    benh.add("dạ dày : ("+duLieuKhamBenhMoiNhat.getStomach()+")");
+                    benh.add("stomach : ("+duLieuKhamBenhMoiNhat.getStomach()+")");
                 }
                 if (duLieuKhamBenhMoiNhat.getChestProblem() >= 0.5) {
-                    benh.add("bệnh tim ("+duLieuKhamBenhMoiNhat.getChestProblem()+")");
+                    benh.add("chest problem ("+duLieuKhamBenhMoiNhat.getChestProblem()+")");
                 }
                 DefaultListModel<String> model = new DefaultListModel<>();
                 for (String tenBenh : benh) {
@@ -2507,7 +2512,7 @@ public class SystemInterface extends javax.swing.JFrame {
             }
         } catch (SQLException ex) {
             //            Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println("lỗi không kết nối được cơ sở dũ liệu");
+            System.out.println("The connection error failed");
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -2558,7 +2563,7 @@ public class SystemInterface extends javax.swing.JFrame {
         
         try {
             if(new Sysptoms_diagnosesDAO().UpdateDataTrieuChung_Benh(list, id)){
-                JOptionPane.showMessageDialog(this, "Lưu dữ liệu thành công");
+                JOptionPane.showMessageDialog(this, "Save data successfully");
             }
         } catch (SQLException ex) {
             Logger.getLogger(SystemInterface.class.getName()).log(Level.SEVERE, null, ex);
@@ -2603,7 +2608,7 @@ public class SystemInterface extends javax.swing.JFrame {
         
         try {
             if(new Sysptoms_diagnosesDAO().UpdateDataTrieuChung_Benh(list, id)){
-                JOptionPane.showMessageDialog(this, "Lưu dữ liệu thành công");
+                JOptionPane.showMessageDialog(this, "Save data successfully");
             }
         } catch (SQLException ex) {
             Logger.getLogger(SystemInterface.class.getName()).log(Level.SEVERE, null, ex);
@@ -2648,7 +2653,7 @@ public class SystemInterface extends javax.swing.JFrame {
         
         try {
             if(new Sysptoms_diagnosesDAO().UpdateDataTrieuChung_Benh(list, id)){
-                JOptionPane.showMessageDialog(this, "Lưu dữ liệu thành công");
+                JOptionPane.showMessageDialog(this, "Save data successfully");
             }
         } catch (SQLException ex) {
             Logger.getLogger(SystemInterface.class.getName()).log(Level.SEVERE, null, ex);
@@ -2693,7 +2698,7 @@ public class SystemInterface extends javax.swing.JFrame {
         
         try {
             if(new Sysptoms_diagnosesDAO().UpdateDataTrieuChung_Benh(list, id)){
-                JOptionPane.showMessageDialog(this, "Lưu dữ liệu thành công");
+                JOptionPane.showMessageDialog(this, "Save data successfully");
             }
         } catch (SQLException ex) {
             Logger.getLogger(SystemInterface.class.getName()).log(Level.SEVERE, null, ex);
@@ -2738,7 +2743,7 @@ public class SystemInterface extends javax.swing.JFrame {
         
         try {
             if(new Sysptoms_diagnosesDAO().UpdateDataTrieuChung_Benh(list, id)){
-                JOptionPane.showMessageDialog(this, "Lưu dữ liệu thành công");
+                JOptionPane.showMessageDialog(this, "Save data successfully");
             }
         } catch (SQLException ex) {
             Logger.getLogger(SystemInterface.class.getName()).log(Level.SEVERE, null, ex);
@@ -2761,14 +2766,14 @@ public class SystemInterface extends javax.swing.JFrame {
             }
 
         } else {
-            jLabel3.setText("Chọn lại ảnh");
+            jLabel3.setText("Choose image again");
         }
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         try {
             if(patientDAO.updateAvatar(patient.getId(), updateImage)){
-                JOptionPane.showMessageDialog(this, "Lưu avatar thành công");
+                JOptionPane.showMessageDialog(this, "Save Avatar successfully");
             }
         } catch (SQLException ex) {
             Logger.getLogger(SystemInterface.class.getName()).log(Level.SEVERE, null, ex);
@@ -3015,6 +3020,7 @@ public class SystemInterface extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel127;
     private javax.swing.JLabel jLabel128;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
